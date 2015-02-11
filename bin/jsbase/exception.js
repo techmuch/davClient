@@ -179,5 +179,5 @@ define([], function() {
             return filename;
         };
     }();
-    return this.exception
+    return exception
 })

@@ -1,9 +1,9 @@
 define([
-    'jsbase/exception',
-    'jsbase/string',
-    'jsbase/array',
-    'minisax.js/minisax',
-    'dommer/dommer',
+    'bower_modules/davclient/bin/jsbase/exception',
+    'bower_modules/davclient/bin/jsbase/string',
+    'bower_modules/davclient/bin/jsbase/array',
+    'bower_modules/davclient/bin/minisax/minisax',
+    'bower_modules/davclient/bin/dommer/dommer',
 ], function(exception, string, array, minisax, dommer) {
 
     /*
@@ -263,9 +263,10 @@ define([
                 port - HTTP port of the host (optional, defaults to 80)
                 protocol - protocol part of URLs (optional, defaults to http)
             */
+            //debugger;
             this.host = host || location.hostname;
             this.protocol = (protocol || location.protocol.substr(0, location.protocol.length - 1) || 'http');
-            this.port = port || location.port || this.protocol === 'https' ? 443 : 80;
+            this.port = port || +location.port || (this.protocol === 'https' ? 443 : 80);
             this.request = null;
         };
 
@@ -985,7 +986,7 @@ define([
             div.appendChild(text);
             document.getElementsByTagName('body')[0].appendChild(div);
         };
-
-        return this.davlib
+        //debugger;
+        return davlib
     }();
 })

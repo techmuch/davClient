@@ -235,5 +235,5 @@ define([], function() {
             return ret.join('&');
         };
     }();
-    return this.string
+    return string
 })

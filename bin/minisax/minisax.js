@@ -363,5 +363,5 @@ define([], function() {
         };
     }();
 
-    return this.minisax
+    return minisax
 })

@@ -148,5 +148,5 @@ define([], function() {
             return a[a.__iter_index__++];
         };
     }();
-    return this.array
+    return array
 })
