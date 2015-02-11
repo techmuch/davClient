@@ -26,7 +26,7 @@ define([
         Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
     */
-
+    //debugger;
     var global = this;
     // create a namespace for our stuff... notice how we define a class and create
     // an instance at the same time
@@ -986,7 +986,12 @@ define([
             div.appendChild(text);
             document.getElementsByTagName('body')[0].appendChild(div);
         };
-        //debugger;
-        return davlib
     }();
+
+    //debugger;
+
+    var davclient = new davlib.DavClient();
+    davclient.initialize()
+
+    return davclient
 })
