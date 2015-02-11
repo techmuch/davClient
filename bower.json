@@ -1,0 +1,24 @@
+{
+  "name": "davClient",
+  "version": "0.0.1",
+  "homepage": "https://github.com/techmuch/davClient",
+  "authors": [
+    "David Fullmer <david.d.fullmer@gmail.com>"
+  ],
+  "description": "Module WebDAV Client (davClient)",
+  "main": "davClient.js",
+  "keywords": [
+    "webDAV",
+    "dav",
+    "client",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
