@@ -264,9 +264,9 @@ define([
                 protocol - protocol part of URLs (optional, defaults to http)
             */
             //debugger;
-            this.host = host || location.hostname;
-            this.protocol = (protocol || location.protocol.substr(0, location.protocol.length - 1) || 'http');
-            this.port = port || +location.port || (this.protocol === 'https' ? 443 : 80);
+            this.host = '';//host || location.hostname;
+            this.protocol = '';//(protocol || location.protocol.substr(0, location.protocol.length - 1) || 'http');
+            this.port = '';//port || +location.port || (this.protocol === 'https' ? 443 : 80);
             this.request = null;
         };
 
@@ -555,7 +555,7 @@ define([
                 url += ':' + this.port;
             };
             url += path;
-            return url;
+            return path;//url;
         };
 
         this.DavClient.prototype._parseMultiStatus = function(xml) {
